@@ -8,6 +8,12 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+### **quarto-1.8.24_tinytex-2-2023-06-22_python-3.12-trixie_graphviz-2.42.4-3** — Install Graphviz and pin base image (2026-09-15)
+- **Added Graphviz (`dot`) for diagram rendering, pinned to 2.42.4-3**
+- **Pinned base image to python:3.12-trixie (was the floating python:3.12 tag) so the Graphviz version pin can't silently drift out from under it**
+
+---
+
 ### **quarto-1.8.24_tinytex-2-2023-06-22_python-3.12** — Upgrade base image to Python 3.12 (2026-09-15)
 - **Bumped base image from python:3.10 to python:3.12**
 

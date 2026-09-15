@@ -1,6 +1,11 @@
-FROM python:3.12
+FROM python:3.12-trixie
 
 WORKDIR /workdir
+
+# Install Graphviz for diagram rendering (e.g. Quarto's `dot` graphs)
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends graphviz=2.42.4-3 \
+ && rm -rf /var/lib/apt/lists/*
 
 # Using a static file instead to pin this dependency and get a deterministic build
 #RUN wget https://yihui.org/tinytex/install-bin-unix.sh

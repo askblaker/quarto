@@ -8,6 +8,11 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+### **quarto-1.8.24_tinytex-2-2023-06-22_python-3.12** — Upgrade base image to Python 3.12 (2026-09-15)
+- **Bumped base image from python:3.10 to python:3.12**
+
+---
+
 ### **quarto-1.8.24_tinytex-2-2023-06-22** — Pin quarto and tinytex (2024-09-19)
 - Added quarto and tinytex files to release and using those for a deterministic build
 ---
